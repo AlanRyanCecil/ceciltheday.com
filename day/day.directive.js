@@ -4,7 +4,7 @@ angular.module('CecilApp')
     .directive('cecilDay', [function () {
         return {
             restrict: 'E',
-            replace: true,
+            replace: false,
             templateUrl: 'day/day.view.html',
             scope: {
                 content: '@'
