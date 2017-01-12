@@ -12,8 +12,8 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
                     templateUrl: 'src/header/header.view.html'
                 },
                 'main@': {
-                    controlller: 'MainCtrl',
-                    templateUrl: 'src/main/main.view.html'
+                    controlller: 'SimonCtrl',
+                    templateUrl: 'src/simon/simon.view.html'
                 },
                 'footer': {
                     controller: 'FooterCtrl',

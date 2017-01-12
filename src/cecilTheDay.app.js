@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('CecilTheDay', ['ui.router', 'ngMaterial']);
+angular.module('CecilTheDay', ['ui.router', 'ngMaterial', 'SimonSaysApp']);
