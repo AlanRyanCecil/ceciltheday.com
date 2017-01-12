@@ -4,7 +4,7 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
     $urlRouterProvider.otherwise('/');
     // $locationProvider.html5Mode(true);
     $stateProvider
-        .state('home', {
+        .state('base', {
             url: '/',
             views: {
                 'header': {
@@ -22,7 +22,7 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
             }
         })
 
-        .state('home.simon', {
+        .state('base.simon', {
             url: 'simon',
             views: {
                 'main@': {
@@ -32,7 +32,7 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
             }
         })
 
-        .state('home.about', {
+        .state('base.about', {
             url: 'about',
             views: {
                 'main@': {
