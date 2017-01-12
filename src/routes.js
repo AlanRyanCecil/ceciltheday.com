@@ -12,8 +12,8 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
                     templateUrl: 'src/header/header.view.html'
                 },
                 'main@': {
-                    controlller: 'SimonCtrl',
-                    templateUrl: 'src/simon/simon.view.html'
+                    controlller: 'MainCtrl',
+                    templateUrl: 'src/main/main.view.html'
                 },
                 'footer': {
                     controller: 'FooterCtrl',
@@ -21,6 +21,17 @@ angular.module('CecilTheDay').config(['$stateProvider', '$urlRouterProvider', '$
                 }
             }
         })
+
+        .state('home.simon', {
+            url: 'simon',
+            views: {
+                'main@': {
+                    controller: 'SimonCtrl',
+                    templateUrl: 'src/simon/simon.view.html'
+                }
+            }
+        })
+
         .state('home.about', {
             url: 'about',
             views: {
