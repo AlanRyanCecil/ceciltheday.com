@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cecil the Day</title>
+        <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="main/main.style.css">
+        <base href="/">
+    </head>
+    <body ng-app="CecilTheDay" ng-controller="MainCtrl" layout="column" ng-cloak>
+
+        <header>
+            <ui-view name="header"></ui-view>
+        </header>
+
+        <main>
+            <ui-view name="main"></ui-view>
+        </main>
+
+        <footer>
+            <ui-view name="footer"></ui-view>
+        </footer>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="cecilTheDay.app.js"></script>
+        <script src="routes.js"></script>
+        <script src="main/main.controller.js"></script>
+        <script src="header/header.controller.js"></script>
+        <script src="footer/footer.controller.js"></script>
+        <script src="about/about.controller.js"></script>
+    </body>
+</html>
